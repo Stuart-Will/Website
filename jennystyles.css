@@ -1,0 +1,67 @@
+body {
+    background-color: rgb(218, 246, 233);
+    font-family: "Comic Sans MS", cursive, sans-serif
+}
+
+header {
+    text-align: center;
+    font-size: 200%;
+    color: rgb(4, 73, 84);
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(2, 142, 118);
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    background-color: white;
+    padding: 1%;
+    margin: 1%;
+    text-align: center;
+}
+
+a:hover {
+    background-color: rgb(150, 200, 247);
+}
+
+section {
+    background-color: white;
+    margin: 5%;
+    padding: 1.5%;
+}
+
+li {
+    background-color: rgb(218, 246, 233);
+    font-style: italic;
+    margin: 1%;
+    padding: 1%;
+}
+
+footer {
+    text-align: center;
+    font-size: 80%;
+    background-color: rgb(28, 143, 104);
+    padding: 1%;
+}
+
+input {
+    margin: 1%;
+    height: 30px;
+}
+
+textarea {
+    margin: 1%;
+}
