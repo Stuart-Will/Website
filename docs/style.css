@@ -78,6 +78,7 @@ body {
     background-color: rgb(255, 236, 183);
     transition: background-color 0.1s; 
     padding: 6px;
+    margin: 0 8px;
 }
 
 .page-links nav a:hover {
