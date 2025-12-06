@@ -1,6 +1,6 @@
 :root {
   --sidebar-width: 250px;
-  --page-links-height: 100px;
+  --page-links-height: 80px;
 }
 
 * {
@@ -8,9 +8,13 @@
 }
 
 body {
-    background-color: rgb(85, 89, 120);
-    font-family: "Georgia", serif;
-    line-height: 1.2;
+    background-color: rgb(59, 63, 87);
+    font-family: "Verdana", serif;
+    line-height: 1.4;
+}
+
+h1, h2, h3, h4, nav a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .sidebar {
@@ -47,12 +51,6 @@ body {
   background-color:  rgba(255, 236, 183, 0.562);
 }
 
-.content {
-    margin-left: var(--sidebar-width);
-    margin-right: 20px;
-    padding: 20px;
-}
-
 .page-links {
     background: rgb(50, 50, 50);
     height: var(--page-links-height);
@@ -60,15 +58,18 @@ body {
     position: fixed;
     top: 0;
     left: var(--sidebar-width);
-    text-align: center;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;    
+    overflow-x: auto;     /* horizontal scrolling when too small */
+    white-space: nowrap;    
 }
 
-.page-links h1 {
-    color: rgb(255, 255, 255);
-    font-size: 200%;
-    text-align: center;
-    padding: 10px;
-    margin: 0px;
+.page-links nav {
+    margin: 0 auto;
+    display: inline-flex;
+    gap: 1rem
 }
 
 .page-links nav a {
@@ -78,7 +79,6 @@ body {
     background-color: rgb(255, 236, 183);
     transition: background-color 0.1s; 
     padding: 6px;
-    margin: 0 8px;
 }
 
 .page-links nav a:hover {
@@ -91,6 +91,31 @@ body.with-page-links .content {
 
 body.with-page-links .content [id]{
     scroll-margin-top: var(--page-links-height); /* Fix scroll location when pressing button*/
+}
+
+.content {
+    margin-left: var(--sidebar-width);
+    margin-right: 20px;
+    padding: 20px;
+}
+
+.content a:link {
+  color: pink;
+  background-color: transparent;
+}
+
+.content a:visited {
+  color: rgb(255, 96, 123);
+  background-color: transparent;
+}
+
+.content h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.content p {
+    margin-top: 5px;
 }
 
 section {
@@ -116,16 +141,6 @@ img {
     display: block;
     margin: auto;
     padding: 0px;
-}
-
-.content a:link {
-  color: pink;
-  background-color: transparent;
-}
-
-.content a:visited {
-  color: rgb(255, 96, 123);
-  background-color: transparent;
 }
 
 
