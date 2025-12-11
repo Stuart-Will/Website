@@ -110,7 +110,7 @@ body.with-page-links .content [id]{
 }
 
 .content h2 {
-    margin-top: 0;
+    margin-top: 20px;
     margin-bottom: 0;
 }
 
@@ -133,6 +133,11 @@ h1 {
     text-align: center;
     padding-bottom:10px;
     margin: 0px;
+}
+
+h4 {
+    margin-top: 7px;
+    margin-bottom: 7px;
 }
 
 img {
