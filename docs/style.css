@@ -63,6 +63,7 @@ h1, h2, h3, h4, nav a {
     display: flex;
     align-items: center;    
     overflow-x: auto;     /* horizontal scrolling when too small */
+    overflow-y: hidden;
     white-space: nowrap;    
 }
 
