@@ -8,8 +8,8 @@
 }
 
 body {
-    background-color: rgb(40, 44, 62);
-    font-family: "Verdana", serif;
+    background-color: rgb(26, 29, 41);
+    font-family: "Times New Roman", serif;
     line-height: 1.4;
 }
 
@@ -52,7 +52,7 @@ h1, h2, h3, h4, nav a {
 }
 
 .page-links {
-    background: rgb(50, 50, 50);
+    background: rgb(0, 0, 0);
     height: var(--page-links-height);
     width: calc(100vw - var(--sidebar-width));
     position: fixed;
@@ -141,6 +141,10 @@ ul.list li{
     font-family: "Verdana", serif;
     font-size: 0.87em;
     padding-left: 30px;
+}
+
+.side {
+    float: right;
 }
 
 .tab{
